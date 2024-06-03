@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./clipboard-page-images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/c3c5c8b10e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: var(--cyan);
+            margin-top: 10px;
+        }
+
+    </style>
+
+
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["name"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+
+          }
+        }
+  </script>
+     
+</head>
+<body>
+    <main>
+        <section class="main-section">
+          <div class="logo-svg">
+             <svg class="footer-logo" width="125" height="125" xmlns="http://www.w3.org/2000/svg"><g stroke="#26BBA4" stroke-width="10" fill="none" fill-rule="evenodd"><circle cx="62.5" cy="62.5" r="57.5"/><path d="M85.481 85.481c-12.692 12.692-33.27 12.692-45.962 0s-12.692-33.27 0-45.962 33.27-12.692 45.962 0" stroke-linecap="round"/></g></svg>
+         </div> 
+         <div>
+            <h1> CONTACT US</h1>
+         </div>
+         <div class="contact-container">
+              <div class="contact-img">
+                 <img src="./clipboard-page-images/image-computer.png" alt="computer-img" class="computer">
+              </div>
+              <div class="form-container">
+                 <form name="myForm" onsubmit="return validateForm()">
+              
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Name" >
+              
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Email Address">
+
+                  <label for="number">Number</label>
+                  <input type="tel" id="number" name="number" placeholder="Phone Number">
+              
+              
+                  <label for="referral">Referral Source</label>
+                  <select id="referral" name="referral">
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="word of mouth">Word of Mouth</option>
+                  </select>
+
+                  
+                  <button type="submit" class="submit"><a href="#" class="cyan-shadow">Submit</a></button>
+                
+              
+                  
+
+                  </form>
+                
+              
+                </div>
+            </div>
+       </section>
+  </main>
+     
+
+  <footer>
+     <div class="footer-logo"><i   class="fa-regular fa-copyright fa-3x"></i></div>
+     <nav>
+          <ul>
+              <div>
+                 <li><a href="./index.html">About Us</a></li>
+                 <li><a href="./contact.html">Contact Us</a></li>
+              </div>
+              <div>
+                 <li><a href="#">Privacy Policy</a></li>
+                 <li><a href="#">Press Kit</a></li>
+              </div>
+              <div>
+                 <li><a href="#">Install Guide</a></li>
+              </div>
+          </ul>
+     </nav>
+     <div class="footer-icon">
+         <a href="#" class="fa-brands fa-square-facebook fa-xl"></a>
+         <a href="#" class="fa-brands fa-twitter fa-xl"></a>
+         <a href="#" class="fa-brands fa-instagram fa-xl"></a>
+     </div>
+  </footer>   
+</body>
+</html>
